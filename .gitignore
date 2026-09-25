@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# Next.js / build
+frontend/.next/
+frontend/out/
+frontend/build/
+*.tsbuildinfo
+
+# Vercel
+.vercel
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python / ML caches
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+*.log
+
+# Secrets & keys
+*.pem
+credentials.json
