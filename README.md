@@ -29,10 +29,10 @@ uvicorn main:app --reload --port 8000
 Set `NEXT_PUBLIC_API_BASE` in Vercel to your Render API URL (e.g. `https://niticargo-api.onrender.com`).
 
 ### Backend (Render)
-This repo includes `render.yaml`. Deploy from the Render dashboard Blueprint:
+Live API: **https://niticargo-api.onrender.com**
 
-1. Open https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2Fraza-2005%2FNitiCargo
-2. Apply the `niticargo-api` web service (free plan, `backend` root directory).
-3. After deploy, copy the service URL and set it as `NEXT_PUBLIC_API_BASE` on Vercel.
+Dashboard: https://dashboard.render.com/web/srv-dar355m0tbcc738r746g
 
-Local defaults still use `http://127.0.0.1:8000`.
+This repo includes `render.yaml`. Auto-deploys from `main` with root directory `backend`.
+
+Free-tier note: the first request after idle can take ~30–60s while the instance wakes up.
