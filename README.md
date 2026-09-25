@@ -25,4 +25,14 @@ uvicorn main:app --reload --port 8000
 
 ## Production notes
 
-Set `NEXT_PUBLIC_API_BASE` in Vercel to your hosted FastAPI URL (CORS already allows `*`). Without it, the UI defaults to `http://127.0.0.1:8000`.
+### Frontend (Vercel)
+Set `NEXT_PUBLIC_API_BASE` in Vercel to your Render API URL (e.g. `https://niticargo-api.onrender.com`).
+
+### Backend (Render)
+This repo includes `render.yaml`. Deploy from the Render dashboard Blueprint:
+
+1. Open https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2Fraza-2005%2FNitiCargo
+2. Apply the `niticargo-api` web service (free plan, `backend` root directory).
+3. After deploy, copy the service URL and set it as `NEXT_PUBLIC_API_BASE` on Vercel.
+
+Local defaults still use `http://127.0.0.1:8000`.
