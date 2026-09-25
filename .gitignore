@@ -31,3 +31,5 @@ Thumbs.db
 # Secrets & keys
 *.pem
 credentials.json
+
+.vercel
