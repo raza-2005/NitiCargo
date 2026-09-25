@@ -750,7 +750,6 @@ export default function Page() {
                       fill="#fbbf24"
                       stroke="#000000"
                       strokeWidth={1.5}
-                      isFront
                     >
                       <Label
                         content={(props) => (
